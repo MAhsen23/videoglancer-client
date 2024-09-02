@@ -1,5 +1,5 @@
 const constants = {
-    apiUrl: 'http://193.203.169.221:80',
+  apiUrl: "https://api.videoglancer.top",
 };
 
 export default constants;
