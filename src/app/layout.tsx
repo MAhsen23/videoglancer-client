@@ -103,7 +103,7 @@ export default function RootLayout({
           <div className="layout-header">
             <Header />
           </div>
-          <div className="layout-content">{children}</div>
+          <div className="layout-content text-gray-900">{children}</div>
           <div className="layout-footer">
             <Footer />
           </div>
