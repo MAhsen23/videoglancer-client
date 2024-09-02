@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Instructions from "@/components/instructions/instructions";
 import React from "react";
+import InstructionComponent from "@/components/instructionComponent/InstructionComponent";
 
 export const generateMetadata = (): Metadata => {
   return {
@@ -42,7 +42,7 @@ export default function About() {
         </p>
       </div>
       <div className="w-[90%] max-w-[920px] lg:w-[70%] mt-8">
-        <Instructions
+        <InstructionComponent
           heading={"Why VideoGlancer?"}
           description={null}
           points={[

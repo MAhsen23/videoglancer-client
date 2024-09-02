@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import Instructions from "../components/instructions/instructions";
 import { ApiService } from "../services/ApiService";
 import ActivityIndicator from "../components/activityIndicator/ActivityIndicator";
 import { CommonService } from "../services/CommonService";
 import Head from "next/head";
 import { MdClose } from "react-icons/md";
+import InstructionComponent from "@/components/instructionComponent/InstructionComponent";
 
 const Home = () => {
   const [videoLink, setVideoLink] = useState("");
@@ -140,7 +140,7 @@ const Home = () => {
           </p>
         </div>
         <div className="w-[90%] max-w-[920px] lg:w-[70%] my-8">
-          <Instructions
+          <InstructionComponent
             heading={"How to Use VideoGlancer:"}
             description={
               "Using VideoGlancer is a straightforward process that anyone, regardless of technical expertise, can follow:"
@@ -170,7 +170,7 @@ const Home = () => {
           />
         </div>
         <div className="w-[90%] max-w-[920px] lg:w-[70%] my-8">
-          <Instructions
+          <InstructionComponent
             heading={"Features of VideoGlancer:"}
             description={
               "VideoGlancer stands out with a range of features tailored to enhance the learning experience:"
@@ -204,7 +204,7 @@ const Home = () => {
           />
         </div>
         <div className="w-[90%] max-w-[920px] lg:w-[70%] my-8">
-          <Instructions
+          <InstructionComponent
             separateLine={true}
             heading={"Frequently Asked Questions:"}
             description={""}

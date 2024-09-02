@@ -1,6 +1,6 @@
 import React from "react";
 
-const Instructions = ({
+const InstructionComponent = ({
   heading,
   description,
   points,
@@ -23,4 +23,4 @@ const Instructions = ({
   );
 };
 
-export default Instructions;
+export default InstructionComponent;
