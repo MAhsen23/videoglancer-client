@@ -37,9 +37,9 @@ const Home = () => {
     try {
       const response = await ApiService.fetchPdf(videoLink);
       const result = await response.json();
-      console.log("billie", result);
-
-      if (result.pdf) {
+      if (result.warning) {
+        showMessage(result.warning);
+      } else if (result.pdf) {
         const link = document.createElement("a");
         link.href = `data:application/pdf;base64,${result.pdf}`;
         link.download = `${CommonService.getTimestamp()}.pdf`;
